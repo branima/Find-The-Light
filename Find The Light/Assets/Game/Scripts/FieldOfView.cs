@@ -18,10 +18,10 @@ public class FieldOfView : MonoBehaviour
         GetComponent<MeshFilter>().mesh = mesh;
         fov = 360f;
 
-        LightBake();
+        //LightBake();
     }
 
-    void LightBake()
+    void Update()
     {
         float angle = startingAngle;
         float angleIncrease = fov / rayCount;

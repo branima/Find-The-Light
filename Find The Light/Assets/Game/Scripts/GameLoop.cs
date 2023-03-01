@@ -8,6 +8,8 @@ public class GameLoop : MonoBehaviour
     int numOfActiveLamps;
     public Transform lampParent;
 
+    public GameObject lightLines;
+
     public static GameLoop Instance;
     void Awake() => Instance = this;
 
@@ -22,6 +24,7 @@ public class GameLoop : MonoBehaviour
         {
             GameManager.Instance.GetPlayer().GetComponent<PlayerMovement>().enabled = false;
             CameraSwitch.Instance.ChangeCamera();
+            lightLines.SetActive(true);
         }
     }
 }
