@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2138677392}
-  m_IndirectSpecularColor: {r: 0.17278083, g: 0.21590818, b: 0.297845, a: 1}
+  m_IndirectSpecularColor: {r: 0.17278022, g: 0.2159073, b: 0.29784322, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -923,7 +923,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  viewDistance: 50
+  viewDistance: 30
   rayCount: 500
 --- !u!23 &734731777
 MeshRenderer:
