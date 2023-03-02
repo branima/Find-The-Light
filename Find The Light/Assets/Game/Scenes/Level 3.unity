@@ -3348,6 +3348,7 @@ MonoBehaviour:
   - {fileID: 817546940}
   - {fileID: 1084746806}
   - {fileID: 2082885949}
+  speed: 2.25
 --- !u!120 &1940989292
 LineRenderer:
   m_ObjectHideFlags: 0
