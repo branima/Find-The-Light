@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3526022412698882770}
   - component: {fileID: 3526022412698882771}
   - component: {fileID: 3526022412698882768}
+  - component: {fileID: 2652841870525108286}
   m_Layer: 0
   m_Name: Light Projection
   m_TagString: Untagged
@@ -113,3 +114,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+--- !u!111 &2652841870525108286
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3526022412698882349}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: b244a876b1c8be847b7ac2d9e4defb03, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: b244a876b1c8be847b7ac2d9e4defb03, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0

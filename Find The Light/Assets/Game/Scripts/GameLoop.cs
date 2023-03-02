@@ -10,6 +10,8 @@ public class GameLoop : MonoBehaviour
 
     public GameObject lightLines;
 
+    public WallsDown wallsDownScript;
+
     public static GameLoop Instance;
     void Awake() => Instance = this;
 
@@ -25,6 +27,7 @@ public class GameLoop : MonoBehaviour
             GameManager.Instance.GetPlayer().GetComponent<PlayerMovement>().enabled = false;
             CameraSwitch.Instance.ChangeCamera();
             lightLines.SetActive(true);
+            wallsDownScript.enabled = true;
         }
     }
 }
