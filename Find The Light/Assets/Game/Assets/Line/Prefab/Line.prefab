@@ -149,6 +149,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  lightAnimation: {fileID: 780411824683918197}
   speed: 2.25
 --- !u!111 &780411824683918197
 Animation:

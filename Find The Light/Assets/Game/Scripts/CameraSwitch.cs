@@ -38,10 +38,7 @@ public class CameraSwitch : MonoBehaviour
                 cam.rotation = Quaternion.Lerp(cam.rotation, currActiveTransform.rotation, repoTime);
 
             if (cam.position == currActiveTransform.position && (cam.rotation == currActiveTransform.rotation || Vector3.Distance(cam.rotation.eulerAngles, currActiveTransform.rotation.eulerAngles) < 0.001f))
-            { //OVO JE KRITICNO ZBOG RELATIVNE ROTACIJE
                 reposition = false;
-                GameManager.Instance.LevelComplete();
-            }
         }
     }
 

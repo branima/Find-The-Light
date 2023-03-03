@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Light Projection Blue
+  m_Shader: {fileID: -6465566751694194690, guid: b7405657016c2d149b0720cfce140904, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_2191f6f5e3c44a158874d222de0e514b: 15.4
+    - Vector1_242053d2003543b3b1e09468d784cf08: -0.04
+    - Vector1_3ad25726a0354d79a9c00a2dd4c404da: 0
+    - Vector1_58011bd14cab448ab0a2cbd04bd83f68: 0.05
+    - Vector1_84788a09106e40479f9e89ee865e2945: 0
+    - Vector1_b1548f1d0d154c59adbb741c01094a59: 100
+    - alpha_threshold: 100
+    - max_Clamp: 0.05
+    m_Colors:
+    - Color_0f29b939dedd4ee5b37c55dd5d4f42b0: {r: 0.05882353, g: 0.69803923, b: 0.9490196, a: 1}
+    - Color_1: {r: 1, g: 0.36078426, b: 0.910644, a: 1}
+    - Color_4c1a8d7f00eb43e6ba55ad2bfc1706b1: {r: 0, g: 2.1333334, b: 4.2352943, a: 0}
+  m_BuildTextureStacks: []

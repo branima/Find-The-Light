@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ff8062ada037b3444aef82835489868b, type: 2}
+  - {fileID: 2100000, guid: 13b2f5fc049105f419a90481f8b0ae55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
   viewDistance: 40
   rayCount: 500
 --- !u!114 &3526022412698882768
