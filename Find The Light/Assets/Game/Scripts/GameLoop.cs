@@ -31,8 +31,9 @@ public class GameLoop : MonoBehaviour
             lightLines.SetActive(true);
             wallsDownScript.enabled = true;
 
-            foreach (Transform item in lampParent)
-                item.GetComponent<Animator>().SetTrigger("lightDownTrigger");
+            if (floorSticker != null)
+                foreach (Transform item in lampParent)
+                    item.GetComponent<Animator>().SetTrigger("lightDownTrigger");
         }
     }
 

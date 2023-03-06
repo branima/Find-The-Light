@@ -9,4 +9,6 @@ public class AnimationEventController : MonoBehaviour
     void Awake() => Instance = this;
 
     public void EnableLevelCompleteUI() => GameManager.Instance.LevelComplete();
+
+    public void StampSound() => AudioManager.Instance.Play("slap");
 }

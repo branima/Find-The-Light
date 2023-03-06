@@ -16,15 +16,7 @@ public class LineSetup : MonoBehaviour
     float lerpTime;
     public float speed;
 
-    /*
-    /// OLD
-    void Start()
-    {
-        lineRenderer.positionCount = linePoints.Count;
-        for (int i = 0; i < linePoints.Count; i++)
-            lineRenderer.SetPosition(i, linePoints[i].position);
-    }
-    */
+    public AudioSource audioSource;
 
     void Start()
     {
@@ -38,6 +30,7 @@ public class LineSetup : MonoBehaviour
         targetPos = convertedPoints[currPointIdx];
         convertedPoints[currPointIdx] = convertedPoints[currPointIdx - 1];
         lineRenderer.SetPosition(currPointIdx, convertedPoints[currPointIdx]);
+        AudioManager.Instance.Play(audioSource, "laser");
     }
 
     void Update()
@@ -67,6 +60,7 @@ public class LineSetup : MonoBehaviour
             convertedPoints[currPointIdx] = convertedPoints[currPointIdx - 1];
             lineRenderer.positionCount++;
             lineRenderer.SetPosition(currPointIdx, convertedPoints[currPointIdx]);
+            AudioManager.Instance.Play(audioSource, "laser");
         }
     }
 

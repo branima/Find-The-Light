@@ -10,12 +10,7 @@ public class WallsDown : MonoBehaviour
 
     public Animation lightOutAnimation;
 
-    void Start()
-    {
-        //foreach (Transform item in obstaclesParent)
-        //    item.GetComponent<Animator>().SetBool("sinking", true);
-        lightOutAnimation.Play();
-    }
+    void Start() => lightOutAnimation.Play();
 
     void Update()
     {

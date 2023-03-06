@@ -577,7 +577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystickScript: {fileID: 0}
-  speed: 1
+  speed: 0.75
   rb: {fileID: 2419562627366364613}
   playerAnimator: {fileID: 2419562627366364611}
   audioSource: {fileID: 8659620777670551889}

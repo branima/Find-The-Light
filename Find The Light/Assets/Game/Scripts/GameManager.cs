@@ -17,7 +17,10 @@ public class GameManager : MonoBehaviour
     public void Retry() => LoadLevel(SceneManager.GetActiveScene().buildIndex);
     void LoadLevel(int levelIndex) => SceneManager.LoadScene(Mathf.Max(0, levelIndex));
 
-    public void LevelComplete() => levelCompletePanel.SetActive(true);
-
+    public void LevelComplete()
+    {
+        levelCompletePanel.SetActive(true);
+        AudioManager.Instance.Play("success");
+    }
     public Transform GetPlayer() => player;
 }

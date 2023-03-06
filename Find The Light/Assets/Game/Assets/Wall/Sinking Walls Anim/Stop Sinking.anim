@@ -22,7 +22,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.4769504
+        value: 0.47695
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -31,7 +31,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.5
-        value: 0.026960783
+        value: 0.026961
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -41,8 +41,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: material._EmissionColor.r
-    path: 
+    attribute: material._EmissionColor.x
+    path: Wall_v2
     classID: 23
     script: {fileID: 0}
   - curve:
@@ -50,7 +50,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.43258294
+        value: 0.43258
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -59,7 +59,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.5
-        value: 0.0073529407
+        value: 0.0073529
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -69,8 +69,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: material._EmissionColor.g
-    path: 
+    attribute: material._EmissionColor.y
+    path: Wall_v2
     classID: 23
     script: {fileID: 0}
   - curve:
@@ -78,7 +78,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 2.1185474
+        value: 2.1185
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -87,7 +87,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.5
-        value: 0.093627416
+        value: 0.093627
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -97,8 +97,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: material._EmissionColor.b
-    path: 
+    attribute: material._EmissionColor.z
+    path: Wall_v2
     classID: 23
     script: {fileID: 0}
   - curve:
@@ -125,8 +125,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: material._EmissionColor.a
-    path: 
+    attribute: material._EmissionColor.w
+    path: Wall_v2
     classID: 23
     script: {fileID: 0}
   m_PPtrCurves: []
@@ -138,29 +138,29 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 0
-      attribute: 1218664834
+      path: 1138155570
+      attribute: 144923010
       script: {fileID: 0}
       typeID: 23
       customType: 22
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 0
-      attribute: 1487100290
+      path: 1138155570
+      attribute: 413358466
       script: {fileID: 0}
       typeID: 23
       customType: 22
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 0
-      attribute: 1755535746
+      path: 1138155570
+      attribute: 681793922
       script: {fileID: 0}
       typeID: 23
       customType: 22
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 0
-      attribute: 2023971202
+      path: 1138155570
+      attribute: 950229378
       script: {fileID: 0}
       typeID: 23
       customType: 22
@@ -192,7 +192,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.4769504
+        value: 0.47695
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -201,7 +201,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.5
-        value: 0.026960783
+        value: 0.026961
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -211,8 +211,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: material._EmissionColor.r
-    path: 
+    attribute: material._EmissionColor.x
+    path: Wall_v2
     classID: 23
     script: {fileID: 0}
   - curve:
@@ -220,7 +220,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.43258294
+        value: 0.43258
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -229,7 +229,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.5
-        value: 0.0073529407
+        value: 0.0073529
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -239,8 +239,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: material._EmissionColor.g
-    path: 
+    attribute: material._EmissionColor.y
+    path: Wall_v2
     classID: 23
     script: {fileID: 0}
   - curve:
@@ -248,7 +248,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 2.1185474
+        value: 2.1185
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -257,7 +257,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.5
-        value: 0.093627416
+        value: 0.093627
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -267,8 +267,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: material._EmissionColor.b
-    path: 
+    attribute: material._EmissionColor.z
+    path: Wall_v2
     classID: 23
     script: {fileID: 0}
   - curve:
@@ -295,8 +295,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: material._EmissionColor.a
-    path: 
+    attribute: material._EmissionColor.w
+    path: Wall_v2
     classID: 23
     script: {fileID: 0}
   m_EulerEditorCurves: []

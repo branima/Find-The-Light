@@ -13,6 +13,8 @@ public class ButtonLogic : MonoBehaviour
 
     bool downing;
 
+    public AudioSource audioSource;
+
     void Update()
     {
         if (!downing)
@@ -22,8 +24,10 @@ public class ButtonLogic : MonoBehaviour
             item.transform.position = item.transform.position - Vector3.up * Time.deltaTime * speed;
     }
 
-    void OnTriggerStay(Collider other)
+    void OnTriggerEnter(Collider other)
     {
+        AudioManager.Instance.Play(audioSource, "switch");
+
         buttonAnimator.SetBool("pushedDown", true);
         downing = true;
 
@@ -31,8 +35,17 @@ public class ButtonLogic : MonoBehaviour
             item.SetBool("sinking", true);
     }
 
+    void OnTriggerStay(Collider other)
+    {
+        if (!AudioManager.Instance.IsPlaying("rumble"))
+            AudioManager.Instance.Play("rumble");
+    }
+
     void OnTriggerExit(Collider other)
     {
+        AudioManager.Instance.Play(audioSource, "switch");
+        AudioManager.Instance.Stop("rumble");
+
         buttonAnimator.SetBool("pushedDown", false);
         downing = false;
 

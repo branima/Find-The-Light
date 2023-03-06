@@ -26,6 +26,7 @@ public class AudioManager : MonoBehaviour
     bool isEnabled;
 
     public AudioSource mainAudioSource;
+    public AudioSource secondaryAudioSource;
 
     public static AudioManager Instance;
     void Awake() => Instance = this;
@@ -39,7 +40,12 @@ public class AudioManager : MonoBehaviour
 
         Sound s = Array.Find(sounds, sound => sound.name == name);
 
-        s.source = mainAudioSource;
+        if (!mainAudioSource.isPlaying)
+            s.source = mainAudioSource;
+        else if (!secondaryAudioSource.isPlaying)
+            s.source = secondaryAudioSource;
+        else
+            return;
         s.source.clip = s.clip;
         s.source.volume = s.volume;
         s.source.pitch = s.pitch;
