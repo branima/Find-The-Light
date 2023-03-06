@@ -58,8 +58,8 @@ public class LineSetup : MonoBehaviour
 
             if (currPointIdx == linePoints.Count)
             {
-                GameLoop.Instance.EnableSticker();
-                TurnOffLights();
+                if (GameLoop.Instance.EnableSticker())
+                    TurnOffLights();
                 return;
             }
 

@@ -36,5 +36,18 @@ public class GameLoop : MonoBehaviour
         }
     }
 
-    public void EnableSticker() => floorSticker.SetActive(true);
+    public bool EnableSticker()
+    {
+        if (floorSticker != null)
+        {
+            floorSticker.SetActive(true);
+            return true;
+        }
+        else
+            Invoke("LevelComplete", 1f);
+
+        return false;
+    }
+
+    void LevelComplete() => AnimationEventController.Instance.EnableLevelCompleteUI();
 }

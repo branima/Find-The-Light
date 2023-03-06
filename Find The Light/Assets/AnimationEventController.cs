@@ -5,5 +5,8 @@ using UnityEngine;
 public class AnimationEventController : MonoBehaviour
 {
 
+    public static AnimationEventController Instance;
+    void Awake() => Instance = this;
+
     public void EnableLevelCompleteUI() => GameManager.Instance.LevelComplete();
 }
