@@ -15,8 +15,13 @@ public class PlayerMovement : MonoBehaviour
 
     Vector3 direction;
 
-    void OnDisable() => playerAnimator.SetBool("boolWalk", false);
+    public AudioSource audioSource;
 
+    void OnDisable()
+    {
+        playerAnimator.SetBool("boolWalk", false);
+        AudioManager.Instance.Stop("walk");
+    }
     void FixedUpdate()
     {
 
@@ -25,10 +30,16 @@ public class PlayerMovement : MonoBehaviour
         direction = new Vector3(hor, 0, ver);
 
         if (direction != Vector3.zero)
+        {
             playerAnimator.SetBool("boolWalk", true);
+            if (!AudioManager.Instance.IsPlaying("walk"))
+                AudioManager.Instance.Play(audioSource, "walk");
+        }
         else
+        {
             playerAnimator.SetBool("boolWalk", false);
-
+            AudioManager.Instance.Stop("walk");
+        }
         //transform.Translate(direction * Time.deltaTime * speed * 5f);
         rb.MovePosition(transform.position + direction * Time.fixedDeltaTime * speed * 5f);
 

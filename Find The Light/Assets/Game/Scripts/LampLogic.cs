@@ -12,6 +12,8 @@ public class LampLogic : MonoBehaviour
 
     RaycastHit hit;
 
+    public AudioSource audioSource;
+
     void Start() => player = GameManager.Instance.GetPlayer();
 
     void Update()
@@ -23,6 +25,8 @@ public class LampLogic : MonoBehaviour
                 litUp = true;
                 lightAnimator.SetTrigger("lightUpTrigger");
                 GameLoop.Instance.AddActiveLamp();
+                AudioManager.Instance.Play(audioSource, "glowUp1");
+                //AudioManager.Instance.Play(audioSource, "glowUp2");   
             }
             else if (litUp && hit.transform != player)
             {

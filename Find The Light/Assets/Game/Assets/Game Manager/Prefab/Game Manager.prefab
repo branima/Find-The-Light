@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 314856993813485744}
   - component: {fileID: 314856993813485747}
   - component: {fileID: 2701559846460673162}
+  - component: {fileID: 7603875349380084151}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -108,3 +109,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b8d9869c16d05e42900fa5814ba8507, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7603875349380084151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314856993813485772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0de0e20a8d1e2c45beb355939e23bf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: walk
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: cdf0fca339726b741b9971db5818c42b, type: 3}
+    volume: 1
+    pitch: 1.075
+    loop: 1
+  - name: glowUp1
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: ad23a305814788f4b957be1d20a9f914, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+  - name: glowUp2
+    source: {fileID: 0}
+    clip: {fileID: 8300000, guid: a572fb6a93c268b42aa12633771c42c4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+  mainAudioSource: {fileID: 0}

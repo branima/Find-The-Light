@@ -100,7 +100,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 55
   viewDistance: 40
-  rayCount: 500
+  rayCount: 1500
 --- !u!114 &3526022412698882768
 MonoBehaviour:
   m_ObjectHideFlags: 0
