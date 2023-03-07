@@ -16,7 +16,7 @@ public class LampLogic : MonoBehaviour
 
     void Start() => player = GameManager.Instance.GetPlayer();
 
-    void FixedUpdate()
+    void Update()
     {
         if (Physics.Raycast(transform.position, player.position - transform.position, out hit))
         {
