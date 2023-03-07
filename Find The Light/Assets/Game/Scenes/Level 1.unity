@@ -217,7 +217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5793895094187119065, guid: 4a19e5241c7b16344a996d18a5d9ae84, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5793895094187119065, guid: 4a19e5241c7b16344a996d18a5d9ae84, type: 3}
       propertyPath: m_LocalScale.x
@@ -417,7 +417,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5793895094187119065, guid: 4a19e5241c7b16344a996d18a5d9ae84, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5793895094187119065, guid: 4a19e5241c7b16344a996d18a5d9ae84, type: 3}
       propertyPath: m_LocalScale.x
@@ -523,8 +523,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1428273644}
-  - {fileID: 652561727}
   - {fileID: 400416208}
+  - {fileID: 652561727}
   m_Father: {fileID: 278267382}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1710,17 +1710,21 @@ PrefabInstance:
       value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 780411824683918192, guid: 9afb6027998beff4c889443826618412, type: 3}
+      propertyPath: linePoints.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 780411824683918192, guid: 9afb6027998beff4c889443826618412, type: 3}
       propertyPath: linePoints.Array.data[0]
       value: 
       objectReference: {fileID: 1428273644}
     - target: {fileID: 780411824683918192, guid: 9afb6027998beff4c889443826618412, type: 3}
       propertyPath: linePoints.Array.data[1]
       value: 
-      objectReference: {fileID: 652561727}
+      objectReference: {fileID: 400416208}
     - target: {fileID: 780411824683918192, guid: 9afb6027998beff4c889443826618412, type: 3}
       propertyPath: linePoints.Array.data[2]
       value: 
-      objectReference: {fileID: 400416208}
+      objectReference: {fileID: 652561727}
     - target: {fileID: 780411824683918192, guid: 9afb6027998beff4c889443826618412, type: 3}
       propertyPath: linePoints.Array.data[3]
       value: 
@@ -1965,6 +1969,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5812335852347261957, guid: 4c43b7753a086bb45ac5f30770a6f223, type: 3}
+      propertyPath: m_Name
+      value: Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 5812335852347261957, guid: 4c43b7753a086bb45ac5f30770a6f223, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5872332428211421725, guid: 4c43b7753a086bb45ac5f30770a6f223, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1767023807}
+    - target: {fileID: 7871508927113102833, guid: 4c43b7753a086bb45ac5f30770a6f223, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7871508927113102835, guid: 4c43b7753a086bb45ac5f30770a6f223, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2020,6 +2040,10 @@ PrefabInstance:
     - target: {fileID: 7871508927808569142, guid: 4c43b7753a086bb45ac5f30770a6f223, type: 3}
       propertyPath: m_Name
       value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871508928983532196, guid: 4c43b7753a086bb45ac5f30770a6f223, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c43b7753a086bb45ac5f30770a6f223, type: 3}

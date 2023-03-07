@@ -16,12 +16,14 @@ public class LampLogic : MonoBehaviour
 
     void Start() => player = GameManager.Instance.GetPlayer();
 
-    void Update()
+    void FixedUpdate()
     {
         if (Physics.Raycast(transform.position, player.position - transform.position, out hit))
         {
+
             if (hit.transform == player && !litUp)
             {
+                //Debug.Log(Time.time + " PALIM, " + hit.transform + ", " + litUp);
                 litUp = true;
                 lightAnimator.SetTrigger("lightUpTrigger");
                 GameLoop.Instance.AddActiveLamp();
@@ -30,10 +32,13 @@ public class LampLogic : MonoBehaviour
             }
             else if (litUp && hit.transform != player)
             {
+                //Debug.Log(Time.time + " GASIM, " + hit.transform + ", " + litUp);
                 litUp = false;
                 lightAnimator.SetTrigger("lightDownTrigger");
                 GameLoop.Instance.RemoveActiveLamp();
             }
+            //else
+            //    Debug.Log(Time.time + " TRECE, " + hit.transform + ", " + litUp);
         }
     }
 }
