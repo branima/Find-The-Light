@@ -30,10 +30,12 @@ public class GameLoop : MonoBehaviour
             CameraSwitch.Instance.ChangeCamera();
             lightLines.SetActive(true);
             wallsDownScript.enabled = true;
-            
+
+            /*
             if (floorSticker != null)
                 foreach (Transform item in lampParent)
                     item.GetComponent<Animator>().SetTrigger("lightDownTrigger");
+            */
         }
     }
 
@@ -42,6 +44,8 @@ public class GameLoop : MonoBehaviour
         if (floorSticker != null)
         {
             floorSticker.SetActive(true);
+            foreach (Transform item in lampParent)
+                item.GetComponent<Animator>().SetTrigger("lightDownTrigger");
             return true;
         }
         else
